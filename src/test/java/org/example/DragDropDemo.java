@@ -29,6 +29,8 @@ public class DragDropDemo extends BaseTest {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        //Assertion
+        driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_result_text")).isDisplayed();
 
     }
 }
